@@ -9,7 +9,7 @@
 
 html,
 body {
-	height: 100%;
+
 }
 
 body {
@@ -53,7 +53,7 @@ body {
 	border-radius: 50%;
 	background: none;
 	background-color: #fff;
-	color: #52be7f;
+	color: #86070D;
 	text-align: center;
 	font-weight: 700;
 	font-size: 1.5em;
@@ -146,10 +146,10 @@ body {
 	width: 14.5em;
 	height: 14.5em;
 	border-radius: 50%;
-	background: #429a67;
+	background: #86070D;
 	background: -webkit-radial-gradient(transparent 35%, #429a67 35%);
 	background: -moz-radial-gradient(transparent 35%, #429a67 35%);
-	background: radial-gradient(transparent 35%, #429a67 35%);
+	background: radial-gradient(transparent 35%, #86070D 35%);
 	color: #fff;
 	text-align: center;
 	text-decoration: none;

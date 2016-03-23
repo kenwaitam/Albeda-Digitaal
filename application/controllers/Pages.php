@@ -15,6 +15,12 @@ public function view($page = 'home')
 
         $this->load->view('templates/header', $data);
         $this->load->view('pages/'.$page, $data);
+        $this->load->view('pages/deelnemers', $data);
+        $this->load->view('pages/fotos', $data);
+        $this->load->view('pages/videos', $data);
+        $this->load->view('pages/documenten', $data);
+        $this->load->view('pages/contact', $data);
+        $this->load->view('templates/footer', $data);
         $this->load->view('templates/cirkelmenu', $data);
     }
 }
