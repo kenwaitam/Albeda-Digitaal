@@ -50,7 +50,7 @@ html{
     min-height:100%;
 }
 body{
-    background-color:#52be7f;
+
 }
 .footer{
     position:absolute;
@@ -70,4 +70,16 @@ body{
 }
 .file_download_image{
     position:absolute;
+}
+
+.firstpage{
+    background: url('../img/city_background.jpg');
+    background-size:cover;
+    height:100%;
+  }
+.text-title{
+ color:white;
+    font-size:70px;
+    font-family:calibri;
+    margin-top:80px;
 }

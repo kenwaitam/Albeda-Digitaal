@@ -1,3 +1,13 @@
-<div class="container">
-    <h1>Container test.</h1>
+
+    <div class="container">
+        <div class="text-center text-title">
+        <p>Albeda Digitaal</p>
+        </div>
+    </div>
 </div>
+
+
+
+
+
+

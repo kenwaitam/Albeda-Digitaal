@@ -15,5 +15,6 @@ public function view($page = 'home')
 
         $this->load->view('templates/header', $data);
         $this->load->view('pages/'.$page, $data);
+        $this->load->view('templates/cirkelmenu', $data);
     }
 }

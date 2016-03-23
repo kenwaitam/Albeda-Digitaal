@@ -4,26 +4,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AlbedaDigitaal Portfolio</title>
-<!--    <link rel="stylesheet" type="text/css" href="../../bootstrap/css/component2.css"/>-->
+    <!-- Circle menu -->
     <?php echo link_tag('css/component2.css'); ?>
     <?php echo link_tag('css/normalize.css'); ?>
     <?php echo link_tag('css/demo.css'); ?>
-<!--    <link rel="stylesheet" type="text/css" href="../../bootstrap/css/normalize.css" />-->
-<!--    <link rel="stylesheet" type="text/css" href="../../bootstrap/css/demo.css" />-->
+
     <!-- Bootstrap -->
-<!--    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
-<!--    <link rel="stylesheet" type="text/css" href="../../bootstrap/css/custom.css"/>-->
     <?php echo link_tag('css/bootstrap.min.css'); ?>
+
+    <!-- Custom CSS -->
     <?php echo link_tag('css/custom.css'); ?>
 
-    <script src="../../bootstrap/js/modernizr-2.6.2.min.js"></script>
-    <script src="../../bootstrap/js/jquery.js"></script>
+
+    <script type="text/javascript" src="<?php echo base_url();?>js/modernizr-2.6.2.min.js" ></script>
+    <script type="text/javascript" src="<?php echo base_url();?>js/jquery.js" ></script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../../bootstrap/js/bootstrap.min.js"></script>
-    <?php echo link_tag('css/component2.css'); ?>
+    <script type="text/javascript" src="<?php echo base_url();?>js/bootstrap.min.js" ></script>
+
     <script>
         $(document).ready(function()
         {
@@ -57,7 +57,6 @@
                 }
             }
         }
-
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-7243260-2']);
         _gaq.push(['_trackPageview']);
@@ -69,7 +68,7 @@
     </script>
 </head>
 <body>
-
+<div class="firstpage">
 <!-- Top Navigation -->
 <img class="menuButton" src="../../img/openmenu.png" width="30px" height="30px">
 
