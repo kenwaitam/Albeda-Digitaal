@@ -1,0 +1,73 @@
+.closeButton{
+    float:right;
+    margin-top:5px;
+    margin-right:5px;
+}
+.closeButton:hover{
+    cursor:pointer;
+}
+.menuButton{
+margin-top:8px;
+    margin-left:8px;
+    cursor:pointer;
+}
+.menu{
+    width:200px;
+    height:100%;
+    position:absolute;
+    left:-200px;
+    top:0px;
+    background: #2D2D2D;
+}
+.component{
+    width:500px;
+    margin-left:auto;
+    margin-right:auto;
+    background:none;
+    margin-top:0;
+
+}
+.dropmenu{
+    margin-top:8px;
+    font-family:calibri;
+    font-size:20px;
+    color:white;
+    width:150px;
+}
+.dropmenu_items{
+    margin-left:10px;
+    text-decoration:none;
+}
+
+.dropmenu_items a{
+    text-decoration:none;
+    color:white;
+    width:100%;
+}
+
+html{
+    position:relative;
+    min-height:100%;
+}
+body{
+    background-color:#52be7f;
+}
+.footer{
+    position:absolute;
+    width:100%;
+    overflow:hidden;
+    height:260px;
+    left:0;
+    bottom:0;
+    margin-bottom:100px;
+}
+.document_text{
+    font-size:17px;
+    margin-left:53px;
+}
+.title_text{
+    margin-top:80px;
+}
+.file_download_image{
+    position:absolute;
+}
