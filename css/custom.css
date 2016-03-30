@@ -38,9 +38,19 @@
     color:white;
     width:150px;
 }
+.dropmenu_title{
+    margin-left:10px;
+    text-decoration:none;
+}
+.dropmenu_title a{
+    text-decoration:none;
+    color:white;
+    width:100%;
+}
 .dropmenu_items{
     margin-left:10px;
     text-decoration:none;
+    width:190px;
 }
 
 .dropmenu_items a{

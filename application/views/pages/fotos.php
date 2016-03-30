@@ -1,4 +1,4 @@
-<div class="layer1">
+<div class="layer1 fotos">
     <div class="container">
         <div class="separationbar"></div>
 

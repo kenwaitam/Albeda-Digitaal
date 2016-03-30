@@ -1,4 +1,4 @@
-<div class="layer3">
+<div class="layer3 documenten">
 
     <div class="container">
         <div class="separationbar"></div>

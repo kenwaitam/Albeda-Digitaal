@@ -1,4 +1,4 @@
-   <div class="separationbar" id="separationbar"></div>
+   <div class="separationbar deelnemers" id="separationbar"></div>
     <div class="container">
         <h3>Deelnemers</h3>
         <div class="row">

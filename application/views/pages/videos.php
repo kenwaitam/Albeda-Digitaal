@@ -1,4 +1,4 @@
-<div class="layer2">
+<div class="layer2 videos">
     <div class="container">
         <div class="separationbar"></div>
         <h3>Video's</h3>

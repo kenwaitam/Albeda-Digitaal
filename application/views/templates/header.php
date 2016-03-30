@@ -75,11 +75,64 @@
 <div class="menu">
     <img class="closeButton" src="../../img/closebtn_white.png" width="30px" height="30px">
     <div class="dropmenu">
-        <p class="dropmenu_items"><a href="#">Albeda Digitaal</a></p>
+        <p class="dropmenu_title" id="home"><a href="#">Albeda Digitaal</a></p>
         <ul>
-            <li class="dropmenu_items"><a href="#">Printen</a></li>
+            <li class="dropmenu_items" id="deelnemers"><a href="#">Deelnemers</a></li>
+            <li class="dropmenu_items" id="fotos"><a href="#">Foto's</a></li>
+            <li class="dropmenu_items" id="videos"><a href="#">Videos</a></li>
+            <li class="dropmenu_items" id="documenten"><a href="#">Documenten</a></li>
+            <li class="dropmenu_items" id="contact"><a href="#">Contact</a></li>
+
+            <li class="dropmenu_items"><a>Printen</a></li>
         </ul>
     </div>
 </div>
 <!-- End top navigation -->
 
+<script type="text/javascript">
+//    Animations scroll to div with jquery
+    $(document).ready(function(){
+        $('#home').click(function(){
+            $('html, body').animate({
+                scrollTop: $(".home").offset().top
+            }, 1500);
+            return false;
+        });
+
+        $('#deelnemers').click(function(){
+            $('html, body').animate({
+                scrollTop: $(".deelnemers").offset().top
+            }, 1500);
+            return false;
+        });
+
+        $('#fotos').click(function(){
+            $('html, body').animate({
+                scrollTop: $(".fotos").offset().top
+            }, 1500);
+            return false;
+        });
+
+        $('#videos').click(function(){
+            $('html, body').animate({
+                scrollTop: $(".videos").offset().top
+            }, 1500);
+            return false;
+        });
+
+        $('#documenten').click(function(){
+            $('html, body').animate({
+                scrollTop: $(".documenten").offset().top
+            }, 1500);
+            return false;
+        });
+
+        $('#contact').click(function(){
+            $('html, body').animate({
+                scrollTop: $(".contact").offset().top
+            }, 1500);
+            return false;
+        });
+    });
+//      End animations
+</script>

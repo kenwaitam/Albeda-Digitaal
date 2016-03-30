@@ -1,6 +1,5 @@
-
-    <div class="container">
-        <div class="text-center text-title">
+<div class="container home">
+    <div class="text-center text-title">
         <p>Albeda Digitaal</p>
         </div>
     </div>

@@ -1,4 +1,4 @@
-<div class="layer4">
+<div class="layer4 contact">
     <div class="container">
         <div class="separationbar"></div>
             <div class="row">
