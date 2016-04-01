@@ -84,6 +84,8 @@
             <li class="dropmenu_items" id="contact"><a href="#">Contact</a></li>
 
             <li class="dropmenu_items"><a>Printen</a></li>
+			
+			<li class="dropmenu_items" ><a href="<?php echo site_url('login/index'); ?>">Log in</a></li>
         </ul>
     </div>
 </div>

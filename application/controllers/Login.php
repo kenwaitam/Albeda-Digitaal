@@ -22,7 +22,6 @@ class Login extends CI_Controller {
 		if (isset($_POST["submit"])) {
 			if ($this->form_validation->run()) {
 				if ($this->login_model->login_query() == 1) {
-					$_SESSION['username'] =	'test';
 					if (isset($_SESSION['username'])) {
 						/*$this->load->view('templates/headerlogin', $data);
 						$this->load->view('login/success', $data);
