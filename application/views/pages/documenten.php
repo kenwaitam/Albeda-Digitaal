@@ -23,8 +23,8 @@
                 <td>Risicoanalyse</td>
                 <td>Kees Goedegebuure</td>
                 <td>
-                    <a href="../documents/Behoefteanalyse_kees.docx" download="Behoefteanalyse_Kees">
-                        <img class="file_download_image" src="../../img/word.png" width="30" height="30"><h4 class="document_text">Behoefteanalyse Kees</h4>
+                    <a href="<?php echo base_url("documents/Behoefteanalyse_kees.docx")?>" download="Behoefteanalyse_Kees">
+                        <img class="file_download_image" src="<?php echo base_url("img/word.png")?>" width="30" height="30"><h4 class="document_text">Behoefteanalyse Kees</h4>
                     </a>
                 </td>
             </tr>
@@ -35,8 +35,8 @@
                 <td>Risicoanalyse</td>
                 <td>Niels Evers</td>
                 <td>
-                    <a href="../documents/Behoefteanalyse_niels.docx" download="Behoefteanalyse_Niels">
-                        <img class="file_download_image" src="../../img/word.png" width="30" height="30"><h4 class="document_text">Behoefteanalyse Niels</h4>
+                    <a href="<?php echo base_url("documents/Behoefteanalyse_niels.docx")?>" download="Behoefteanalyse_Niels">
+                        <img class="file_download_image" src="<?php echo base_url("img/word.png")?>" width="30" height="30"><h4 class="document_text">Behoefteanalyse Niels</h4>
                     </a>
                 </td>
             </tr>
@@ -47,8 +47,8 @@
                 <td>Risicoanalyse</td>
                 <td>Jurgen van der Heiden</td>
                 <td>
-                    <a href="../documents/Behoefteanalyse_jurgen.docx" download="Behoefteanalyse_Jurgen">
-                        <img class="file_download_image" src="../../img/word.png" width="30" height="30"><h4 class="document_text">Behoefteanalyse Jurgen</h4>
+                    <a href="<?php echo base_url("documents/Behoefteanalyse_jurgen.docx")?>" download="Behoefteanalyse_Jurgen">
+                        <img class="file_download_image" src="<?php echo base_url("img/word.png")?>" width="30" height="30"><h4 class="document_text">Behoefteanalyse Jurgen</h4>
                     </a>
                 </td>
             </tr>
@@ -59,8 +59,8 @@
                 <td>Risicoanalyse</td>
                 <td>Danny Tam</td>
                 <td>
-                    <a href="../documents/Behoefteanalyse_danny.docx" download="Behoefteanalyse_Danny">
-                        <img class="file_download_image" src="../../img/word.png" width="30" height="30"><h4 class="document_text">Behoefteanalyse Danny</h4>
+                    <a href="<?php echo base_url("documents/Behoefteanalyse_danny.docx")?>" download="Behoefteanalyse_Danny">
+                        <img class="file_download_image" src="<?php echo base_url("img/word.png")?>" width="30" height="30"><h4 class="document_text">Behoefteanalyse Danny</h4>
                     </a>
                 </td>
             </tr>
@@ -70,7 +70,7 @@
                 <td>Kees Goedegebuure</td>
                 <td>
                     <a href="../documents/Functioneelontwerp_kees.docx" download="Functioneelontwerp_Kees">
-                        <img class="file_download_image" src="../../img/word.png" width="30" height="30"><h4 class="document_text">Functioneelontwerp Kees</h4>
+                        <img class="file_download_image" src="<?php echo base_url("img/word.png")?>" width="30" height="30"><h4 class="document_text">Functioneelontwerp Kees</h4>
                     </a>
                 </td>
             </tr>
@@ -82,7 +82,7 @@
                 <td>Danny Tam</td>
                 <td>
                     <a href="../documents/Functioneelontwerp_danny.docx" download="Functioneelontwerp_Danny">
-                        <img class="file_download_image" src="../../img/word.png" width="30" height="30"><h4 class="document_text">Functioneelontwerp Danny</h4>
+                        <img class="file_download_image" src="<?php echo base_url("img/word.png")?>" width="30" height="30"><h4 class="document_text">Functioneelontwerp Danny</h4>
                     </a>
                 </td>
             </tr>
@@ -94,7 +94,7 @@
                 <td>Niels Evers</td>
                 <td>
                     <a href="../documents/Functioneelontwerp_niels.docx" download="Functioneelontwerp_Niels">
-                        <img class="file_download_image" src="../../img/word.png" width="30" height="30"><h4 class="document_text">Functioneelontwerp Niels</h4>
+                        <img class="file_download_image" src="<?php echo base_url("img/word.png")?>" width="30" height="30"><h4 class="document_text">Functioneelontwerp Niels</h4>
                     </a>
                 </td>
             </tr>
@@ -106,7 +106,7 @@
                 <td>Jurgen van der Heiden</td>
                 <td>
                     <a href="../documents/Functioneelontwerp_jurgen.docx" download="Functioneelontwerp_Jurgen">
-                        <img class="file_download_image" src="../../img/word.png" width="30" height="30"><h4 class="document_text">Functioneelontwerp Jurgen</h4>
+                        <img class="file_download_image" src="<?php echo base_url("img/word.png")?>" width="30" height="30"><h4 class="document_text">Functioneelontwerp Jurgen</h4>
                     </a>
                 </td>
             </tr>

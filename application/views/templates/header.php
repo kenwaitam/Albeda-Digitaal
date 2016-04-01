@@ -70,10 +70,10 @@
 <body>
 <div class="firstpage">
 <!-- Top Navigation -->
-<img class="menuButton" src="../../img/openmenu.png" width="30px" height="30px">
+<img class="menuButton" src="<?php echo base_url("img/openmenu.png")?>" width="30px" height="30px">
 
 <div class="menu">
-    <img class="closeButton" src="../../img/closebtn_white.png" width="30px" height="30px">
+    <img class="closeButton" src="<?php echo base_url("img/closebtn_white.png")?>" width="30px" height="30px">
     <div class="dropmenu">
         <p class="dropmenu_title" id="home"><a href="#">Albeda Digitaal</a></p>
         <ul>
