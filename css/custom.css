@@ -130,3 +130,10 @@ body{
     margin-bottom:300px;
     position:initial;
 }
+#wrapper{
+    left:0px;
+    height:100%;
+}
+#wrapper.toggled{
+    left:250px;
+}

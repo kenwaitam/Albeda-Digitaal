@@ -4,11 +4,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AlbedaDigitaal Portfolio</title>
+
     <!-- Circle menu -->
     <?php echo link_tag('css/component2.css'); ?>
     <?php echo link_tag('css/normalize.css'); ?>
     <?php echo link_tag('css/demo.css'); ?>
 
+    <!-- Sidebar -->
+    <?php echo link_tag('css/simple-sidebar.css');?>
     <!-- Bootstrap -->
     <?php echo link_tag('css/bootstrap.min.css'); ?>
 
@@ -28,7 +31,7 @@
         $(document).ready(function()
         {
             $('.menuButton').click(function () {
-                $('.menu').animate({'left': '0px'}, 400);
+                $(".menu").animate({'left': '0px'}, 400);
             });
             $(".closeButton").click(function () {
                 $(".menu").animate({"left": "-200px"}, 400);
@@ -70,25 +73,72 @@
 <body>
 <div class="firstpage">
 <!-- Top Navigation -->
-<img class="menuButton" src="<?php echo base_url("img/openmenu.png")?>" width="30px" height="30px">
 
-<div class="menu">
-    <img class="closeButton" src="<?php echo base_url("img/closebtn_white.png")?>" width="30px" height="30px">
-    <div class="dropmenu">
-        <p class="dropmenu_title" id="home"><a href="#">Albeda Digitaal</a></p>
-        <ul>
-            <li class="dropmenu_items" id="deelnemers"><a href="#">Deelnemers</a></li>
-            <li class="dropmenu_items" id="fotos"><a href="#">Foto's</a></li>
-            <li class="dropmenu_items" id="videos"><a href="#">Videos</a></li>
-            <li class="dropmenu_items" id="documenten"><a href="#">Documenten</a></li>
-            <li class="dropmenu_items" id="contact"><a href="#">Contact</a></li>
 
-            <li class="dropmenu_items"><a>Printen</a></li>
+<!--<div class="menu">-->
+<!--    <img class="closeButton" src="--><?php //echo base_url("img/closebtn_white.png")?><!--" width="30px" height="30px">-->
+<!--    <div class="dropmenu">-->
+<!--        <p class="dropmenu_title" id="home"><a href="#">Albeda Digitaal</a></p>-->
+<!--        <ul>-->
+<!--            <li class="dropmenu_items" id="deelnemers"><a href="#">Deelnemers</a></li>-->
+<!--            <li class="dropmenu_items" id="fotos"><a href="#">Foto's</a></li>-->
+<!--            <li class="dropmenu_items" id="videos"><a href="#">Videos</a></li>-->
+<!--            <li class="dropmenu_items" id="documenten"><a href="#">Documenten</a></li>-->
+<!--            <li class="dropmenu_items" id="contact"><a href="#">Contact</a></li>-->
+<!---->
+<!--            <li class="dropmenu_items"><a>Printen</a></li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</div>-->
+<!-- End top navigation -->
+    <!-- Sidebar -->
+<!--    <img class="menuButton" src="--><?php //echo base_url("img/openmenu.png")?><!--" width="30px" height="30px">-->
+<div id="wrapper">
+    <div id="sidebar-wrapper">
+<!--        <img class="closeButton" src="--><?php //echo base_url("img/closebtn_white.png")?><!--" width="30px" height="30px">-->
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+
+                <a href="#">
+                    Start Bootstrap
+                </a>
+            </li>
+            <li>
+                <a href="#">Dashboard</a>
+            </li>
+            <li>
+                <a href="#">Shortcuts</a>
+         </li>
+            <li>
+                <a href="#">Overview</a>
+            </li>
+            <li>
+                <a href="#">Events</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
         </ul>
     </div>
 </div>
-<!-- End top navigation -->
+    <!-- End div wrapper -->
+    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle" style="float:right;">Toggle Menu</a>
 
+
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+</script>
 <script type="text/javascript">
 //    Animations scroll to div with jquery
     $(document).ready(function(){
