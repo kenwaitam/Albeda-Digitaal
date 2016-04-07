@@ -124,6 +124,22 @@
             <li>
                 <a href="#">Contact</a>
             </li>
+<img class="menuButton" src="<?php echo base_url("img/openmenu.png")?>" width="30px" height="30px">
+
+<div class="menu">
+    <img class="closeButton" src="<?php echo base_url("img/closebtn_white.png")?>" width="30px" height="30px">
+    <div class="dropmenu">
+        <p class="dropmenu_title" id="home"><a href="#">Albeda Digitaal</a></p>
+        <ul>
+            <li class="dropmenu_items" id="deelnemers"><a href="#">Deelnemers</a></li>
+            <li class="dropmenu_items" id="fotos"><a href="#">Foto's</a></li>
+            <li class="dropmenu_items" id="videos"><a href="#">Videos</a></li>
+            <li class="dropmenu_items" id="documenten"><a href="#">Documenten</a></li>
+            <li class="dropmenu_items" id="contact"><a href="#">Contact</a></li>
+
+            <li class="dropmenu_items"><a>Printen</a></li>
+			
+			<li class="dropmenu_items" ><a href="<?php echo site_url('login/index'); ?>">Log in</a></li>
         </ul>
     </div>
 </div>

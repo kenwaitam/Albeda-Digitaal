@@ -1,9 +1,15 @@
 <?php
 class Pages extends CI_Controller{
+	
+	public function __construct() {
+		parent::__construct();
+		$this->load->library('loginstate');
+	}
 
 public function view($page = 'home')
     {
-        if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php'))
+		$this->loginstate->logged_out($page = 'home');
+        /*if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php'))
         {
             // Whoops, we don't have a page for that!
             show_404();
@@ -21,6 +27,6 @@ public function view($page = 'home')
         $this->load->view('pages/documenten', $data);
         $this->load->view('pages/contact', $data);
         $this->load->view('templates/footer', $data);
-//        $this->load->view('templates/cirkelmenu', $data);
+//        $this->load->view('templates/cirkelmenu', $data);*/
     }
 }
