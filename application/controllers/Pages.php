@@ -27,6 +27,6 @@ public function view($page = 'home')
         $this->load->view('pages/documenten', $data);
         $this->load->view('pages/contact', $data);
         $this->load->view('templates/footer', $data);
-//        $this->load->view('templates/cirkelmenu', $data);*/
+        $this->load->view('templates/cirkelmenu', $data);*/
     }
 }

@@ -21,6 +21,7 @@ class LoginState {
 		$data['title'] = ucfirst($page); // Capitalize the first letter
 
 		$this->CI->load->view('templates/header', $data);
+		$this->CI->load->view('templates/sidebar', $data);
 		$this->CI->load->view('pages/'.$page, $data);
 		$this->CI->load->view('pages/deelnemers', $data);
 		$this->CI->load->view('pages/fotos', $data);
@@ -42,6 +43,7 @@ class LoginState {
 		$data['title'] = ucfirst($page); // Capitalize the first letter
 
 		$this->CI->load->view('templates/header', $data);
+		$this->CI->load->view('templates/sidebar', $data);
 		$this->CI->load->view('pages/'.$page, $data);
 		$this->CI->load->view('pages/deelnemers', $data);
 		$this->CI->load->view('pages/fotos', $data);
