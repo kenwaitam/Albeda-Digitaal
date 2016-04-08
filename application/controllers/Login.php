@@ -23,11 +23,13 @@ class Login extends CI_Controller {
 			if ($this->form_validation->run()) {
 				if ($this->login_model->login_query() == 1) {
 					if (isset($_SESSION['username'])) {
+						$this->loginstate->logged_in($page = 'home');
+					}
 						/*$this->load->view('templates/headerlogin', $data);
 						$this->load->view('login/success', $data);
 						$this->load->view('templates/footer');*/
-						$this->loginstate->logged_in($page = 'home');
-					}
+						
+					//}
 				}
 				else {
 					$data['statetitle'] = 'Login Failed';
@@ -49,6 +51,11 @@ class Login extends CI_Controller {
 		$this->load->view('templates/headerlogin', $data);
 		$this->load->view('login/index');
 		$this->load->view('templates/footer');
+	}
+	
+	public function logout(){
+		unset($_SESSION);
+		header('Location: http://ictacademie.info/team4');
 	}
 	
 }

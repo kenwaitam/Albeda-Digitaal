@@ -85,7 +85,15 @@
 
             <li class="dropmenu_items"><a>Printen</a></li>
 			
-			<li class="dropmenu_items" ><a href="<?php echo site_url('login/index'); ?>">Log in</a></li>
+			<?php if (!isset($_SESSION['username'])) {
+				$login_path = site_url('login/index');
+				echo "<li class='dropmenu_items' ><a href=".$login_path.">Log in</a></li>";
+			}
+			else {
+				$logout_path = site_url('login/logout');
+				echo "<li class='dropmenu_items' ><a href=".$logout_path.">Log out</a></li>";
+			}
+			?>
         </ul>
     </div>
 </div>
