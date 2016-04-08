@@ -7,7 +7,6 @@ class LoginState {
 	
 	public function __construct() {
 		$this->CI =& get_instance();
-		$this->CI->load->model('Login_Model');
 	}
 	
     public function logged_out($page = 'home') {
@@ -15,7 +14,7 @@ class LoginState {
 			// Whoops, we don't have a page for that!
 				show_404();
 			}
-
+		
 		$this->CI->load->helper('html');
 			
 		$data['title'] = ucfirst($page); // Capitalize the first letter
@@ -26,7 +25,6 @@ class LoginState {
 		$this->CI->load->view('pages/deelnemers', $data);
 		$this->CI->load->view('pages/fotos', $data);
 		$this->CI->load->view('pages/videos', $data);
-		$this->CI->load->view('pages/documenten', $data);
 		$this->CI->load->view('pages/contact', $data);
 		$this->CI->load->view('templates/footer', $data);
 		// $this->load->view('templates/cirkelmenu', $data);

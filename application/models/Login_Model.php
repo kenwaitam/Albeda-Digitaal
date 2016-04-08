@@ -8,16 +8,12 @@
 		public function login_query() {
 			$username = $this->input->post('username');
 			$password = $this->input->post('password');
-			if ($password == 'test' && $password == 'test') {
-				return 1;
+			if ($username == 'test' && $password == 'test') {
 				$_SESSION['username'] =	'test';
+				return 1;
 			}
 		}	
 			/*$query = $this->db->get_where('login', array('loginName' => $username, 'loginPassword' => $password));
 			return $query->num_rows();*/
-			
-			public function checkSession(){
-				return isset($_SESSION['username']);
-			}
 	}
 ?>

@@ -71,6 +71,99 @@
     </script>
 </head>
 <body>
+
+<div class="firstpage">
+<!-- Top Navigation -->
+
+
+<!--<div class="menu">-->
+<!--    <img class="closeButton" src="--><?php //echo base_url("img/closebtn_white.png")?><!--" width="30px" height="30px">-->
+<!--    <div class="dropmenu">-->
+<!--        <p class="dropmenu_title" id="home"><a href="#">Albeda Digitaal</a></p>-->
+<!--        <ul>-->
+<!--            <li class="dropmenu_items" id="deelnemers"><a href="#">Deelnemers</a></li>-->
+<!--            <li class="dropmenu_items" id="fotos"><a href="#">Foto's</a></li>-->
+<!--            <li class="dropmenu_items" id="videos"><a href="#">Videos</a></li>-->
+<!--            <li class="dropmenu_items" id="documenten"><a href="#">Documenten</a></li>-->
+<!--            <li class="dropmenu_items" id="contact"><a href="#">Contact</a></li>-->
+<!---->
+<!--            <li class="dropmenu_items"><a>Printen</a></li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</div>-->
+<!-- End top navigation -->
+    <!-- Sidebar -->
+<!--    <img class="menuButton" src="--><?php //echo base_url("img/openmenu.png")?><!--" width="30px" height="30px">-->
+<div id="wrapper">
+    <div id="sidebar-wrapper">
+<!--        <img class="closeButton" src="--><?php //echo base_url("img/closebtn_white.png")?><!--" width="30px" height="30px">-->
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+
+                <a href="#">
+                    Start Bootstrap
+                </a>
+            </li>
+            <li>
+                <a href="#">Dashboard</a>
+            </li>
+            <li>
+                <a href="#">Shortcuts</a>
+         </li>
+            <li>
+                <a href="#">Overview</a>
+            </li>
+            <li>
+                <a href="#">Events</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+<img class="menuButton" src="<?php echo base_url("img/openmenu.png")?>" width="30px" height="30px">
+
+<div class="menu">
+    <img class="closeButton" src="<?php echo base_url("img/closebtn_white.png")?>" width="30px" height="30px">
+    <div class="dropmenu">
+        <p class="dropmenu_title" id="home"><a href="#">Albeda Digitaal</a></p>
+        <ul>
+            <li class="dropmenu_items" id="deelnemers"><a href="#">Deelnemers</a></li>
+            <li class="dropmenu_items" id="fotos"><a href="#">Foto's</a></li>
+            <li class="dropmenu_items" id="videos"><a href="#">Videos</a></li>
+            <li class="dropmenu_items" id="documenten"><a href="#">Documenten</a></li>
+            <li class="dropmenu_items" id="contact"><a href="#">Contact</a></li>
+
+            <li class="dropmenu_items"><a>Printen</a></li>
+			
+			<?php if (!isset($_SESSION['username'])) {
+				$login_path = site_url('login/index');
+				echo "<li class='dropmenu_items' ><a href=".$login_path.">Log in</a></li>";
+			}
+			else {
+				$logout_path = site_url('login/logout');
+				echo "<li class='dropmenu_items' ><a href=".$logout_path.">Log out</a></li>";
+			}
+			?>
+        </ul>
+    </div>
+</div>
+    <!-- End div wrapper -->
+    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle" style="float:right;">Toggle Menu</a>
+
+
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+</script>
 <script type="text/javascript">
 //    Animations scroll to div with jquery
     $(document).ready(function(){
