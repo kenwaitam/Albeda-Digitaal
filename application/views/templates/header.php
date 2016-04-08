@@ -26,19 +26,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script type="text/javascript" src="<?php echo base_url();?>js/bootstrap.min.js" ></script>
-
-    <script>
-        $(document).ready(function()
-        {
-            $('.menuButton').click(function () {
-                $(".menu").animate({'left': '0px'}, 400);
-            });
-            $(".closeButton").click(function () {
-                $(".menu").animate({"left": "-200px"}, 400);
-            });
-        });
-
-    </script>
     <script type="text/javascript">
         /* When the user clicks on the button,
          toggle between hiding and showing the dropdown content */
@@ -72,7 +59,7 @@
 </head>
 <body>
 <!-- Top Navigation -->
-
+<img class="menuButton" src="<?php echo base_url("img/openmenu.png")?>" width="30px" height="30px">
 
 <!--<div class="menu">-->
 <!--    <img class="closeButton" src="--><?php //echo base_url("img/closebtn_white.png")?><!--" width="30px" height="30px">-->
