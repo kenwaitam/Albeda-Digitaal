@@ -1,7 +1,7 @@
 .closeButton{
     float:right;
-    margin-top:5px;
-    margin-right:5px;
+    margin-top:10px;
+    margin-right:10px;
 }
 .closeButton:hover{
     cursor:pointer;
@@ -100,6 +100,9 @@ body{
     margin-bottom:300px;
     position:initial;
 }
-#wrapper.toggled{
-    left:250px;
+#sidebar-wrapper{
+    width:0px;
+}
+.toggled{
+    width:250px;
 }
