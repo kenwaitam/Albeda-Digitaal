@@ -32,10 +32,16 @@
 </div>
 <!-- End div wrapper -->
 
-<a href="#menu-toggle" class="btn btn-default" id="menu-toggle" style="float:right;">Toggle Menu</a>
+<a href="#menu-toggle" class="btn btn-default" id="menu-toggle" style="float:right; margin-top:670px;">Toggle Menu</a>
 
 <!-- Menu Toggle Script -->
 <script>
+    $("#menu-toggle").click(function(e){
+        e.preventDefault();
+        $(".menubutton").click(function(){
+           $("#wrapper").addClass("toggled");
+        });
+    });
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
