@@ -19,7 +19,7 @@
     <div class="form-group">
         <label class="control-label col-sm-2" for="usr">Leerlingnummer:</label>
         <div class="col-sm-10">
-            <input class="form-control" name="leerling" maxlength="10" id="usr" placeholder="Leerling nummer" onkeypress="return isNumberKey(event)">
+            <input class="form-control" name="leerling" maxlength="9" id="usr" placeholder="Leerling nummer" onkeypress="return isNumberKey(event)">
         </div>
     </div>
 
