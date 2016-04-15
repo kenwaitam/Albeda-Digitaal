@@ -19,14 +19,14 @@
     <div class="form-group">
         <label class="control-label col-sm-2" for="usr">Leerlingnummer:</label>
         <div class="col-sm-10">
-            <input class="form-control" name="leerling" id="usr" placeholder="Leerling nummer" onkeypress="return isNumberKey(event)">
+            <input class="form-control" name="leerling" maxlength="9" id="usr" placeholder="Leerling nummer" onkeypress="return isNumberKey(event)">
         </div>
     </div>
 
     <div class="form-group">
         <label class="control-label col-sm-2" for="usr">Mentor:</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" name="mentor" id="usr" pattern="[0-9]" placeholder="Mentor">
+            <input type="text" class="form-control" name="mentor" id="usr" placeholder="Mentor">
         </div>
     </div>
 

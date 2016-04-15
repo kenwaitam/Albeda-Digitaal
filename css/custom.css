@@ -1,3 +1,37 @@
+.container-login{
+    padding: 15px;
+    margin-top: 15px;
+    border: 1px solid #C3C5C4;
+    background-color: #C3C5C4;
+}
+.main-container-login{
+    background-color:#C3C5C4; height: 100%;
+}
+.btn-login{ 
+    background-color: #E34D42;
+    color: #fff;
+}
+.btn-login:hover{
+    background-color: #BD362C;
+    color: #fff;
+}
+.container-login{
+    padding: 15px;
+    margin-top: 15px;
+    border: 1px solid #C3C5C4;
+    background-color: #C3C5C4;
+}
+.main-container-login{
+    background-color:#C3C5C4; height: 100%;
+}
+.btn-login{ 
+    background-color: #E34D42;
+    color: #fff;
+}
+.btn-login:hover{
+    background-color: #BD362C;
+    color: #fff;
+}
 .closeButton{
     float:right;
     margin-top:10px;
