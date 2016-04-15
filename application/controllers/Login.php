@@ -13,7 +13,7 @@ class Login extends CI_Controller {
 		$this->load->library('form_validation');
 		$this->load->library('session');
 		
-		$data['systitle'] = 'CI Login System';
+		$data['systitle'] = 'Albeda Digitaal Login System';
 		$data['successtitle'] = 'Login Success';
 		
 		$this->form_validation->set_rules('username', 'Username', 'required');
@@ -49,7 +49,7 @@ class Login extends CI_Controller {
 	}
 	
 	public function showForm($data) {
-		$this->load->view('templates/headerlogin', $data);
+		//$this->load->view('templates/headerlogin', $data);
 		$this->load->view('login/index');
 		$this->load->view('templates/footer');
 	}

@@ -1,4 +1,4 @@
-<h1><?php echo $statetitle; ?></h1>
+<h1>Albeda Digitaal Login</h1>
 
 <?php echo form_open('login/index'); ?>
 
