@@ -34,7 +34,7 @@
 		<div class="row">
 		    <div class="col-sm-12">
 				<div class="col-sm-12">
-				<?php echo form_submit('submit ', 'Sign in', 'class="btn btn-lg btn-login" style="margin-top: 15px;"'); ?>
+				<?php echo form_submit('submit ', 'Login', 'class="btn btn-lg btn-login" style="margin-top: 15px;"'); ?>
 				</div>
 			</div>
 		</div>	

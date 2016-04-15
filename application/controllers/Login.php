@@ -12,14 +12,13 @@ class Login extends CI_Controller {
 		$this->load->helper('form');
 		$this->load->library('form_validation');
 		$this->load->library('session');
-		
 		$data['systitle'] = 'Albeda Digitaal Login System';
 		$data['successtitle'] = 'Login Success';
 		
 		$this->form_validation->set_rules('username', 'Username', 'required');
 		$this->form_validation->set_rules('password', 'Password', 'required');
-		
-		if (isset($_POST["submit"])) {
+
+		if(isset($_POST["submit"])) {
 			if ($this->form_validation->run()) {
 				if ($this->login_model->login_query() == 1) {
 					$_SESSION['username'] =	'test';
