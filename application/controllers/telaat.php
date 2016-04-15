@@ -14,7 +14,7 @@ class telaat extends CI_Controller {
         $this->load->library('loginstate');
         $this->load->helper('form');
         $this->load->library('form_validation');
-        var_dump($_POST);
+
     }
 
     public function index(){
