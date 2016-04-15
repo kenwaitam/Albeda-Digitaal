@@ -10,7 +10,9 @@
             <li id="deelnemers"><a href="#">Deelnemers</a></li>
             <li id="fotos"><a href="#">Foto's</a></li>
             <li id="videos"><a href="#">Videos</a></li>
-            <li id="documenten"><a href="#">Documenten</a></li>
+			<?php if (isset($_SESSION['username'])){
+            echo '<li id="documenten"><a href="#">Documenten</a></li>';
+			}?>
             <li id="contact"><a href="#">Contact</a></li>
             <li><a href="#">Printen</a></li>
 			<?php if (!isset($_SESSION['username'])){
