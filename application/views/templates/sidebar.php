@@ -13,6 +13,14 @@
             <li id="documenten"><a href="#">Documenten</a></li>
             <li id="contact"><a href="#">Contact</a></li>
             <li><a href="#">Printen</a></li>
+			<?php if (!isset($_SESSION['username'])){
+				$login_path = site_url('login/index');
+				echo '<li id="contact"><a href="'.$login_path.'">Login</a></li>';
+			}
+			else{
+				$logout_path = site_url('login/logout');
+				echo '<li id="contact"><a href="'.$logout_path.'">Logout</a></li>';
+			}?>
         </ul>
     </div>
 </div>

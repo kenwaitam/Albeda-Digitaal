@@ -22,6 +22,7 @@ class Login extends CI_Controller {
 		if (isset($_POST["submit"])) {
 			if ($this->form_validation->run()) {
 				if ($this->login_model->login_query() == 1) {
+					$_SESSION['username'] =	'test';
 					if (isset($_SESSION['username'])) {
 						$this->loginstate->logged_in($page = 'home');
 					}
@@ -54,8 +55,9 @@ class Login extends CI_Controller {
 	}
 	
 	public function logout(){
-		unset($_SESSION);
-		header('Location: http://ictacademie.info/team4');
+		session_start();
+		session_destroy();
+		header('');
 	}
 	
 }

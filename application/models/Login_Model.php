@@ -9,7 +9,6 @@
 			$username = $this->input->post('username');
 			$password = $this->input->post('password');
 			if ($username == 'test' && $password == 'test') {
-				$_SESSION['username'] =	'test';
 				return 1;
 			}
 		}	
