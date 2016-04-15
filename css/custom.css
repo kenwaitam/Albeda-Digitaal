@@ -111,3 +111,7 @@ body{
     margin-left:auto;
     margin-right:auto;
 }
+
+#usr{
+    width: 200px;
+}
