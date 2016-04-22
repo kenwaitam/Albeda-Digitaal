@@ -27,7 +27,7 @@
 <script>
     $(document).ready(function(){
        $('.project1').click(function(){
-           $(location).attr('href', '../')
+           $(location).attr('href', '../');
        });
     });
 </script>
