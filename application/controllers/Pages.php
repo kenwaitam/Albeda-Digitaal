@@ -12,7 +12,6 @@ public function view()
     }
 public function index(){
     $this->load->view('templates/header');
-    $this->load->view('templates/sidebar_admin');
     $this->load->view('pages/projectpagina');
     }
 public function project_aanmaken(){
