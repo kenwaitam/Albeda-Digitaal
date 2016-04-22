@@ -190,6 +190,30 @@ if ( ! function_exists('form_hidden'))
 
 // ------------------------------------------------------------------------
 
+if ( ! function_exists('form_input_req)'))
+{
+	/**
+	 * Text Input Field
+	 *
+	 * @param	mixed
+	 * @param	string
+	 * @param	mixed
+	 * @return	string
+	 */
+	function form_input_req($data = '', $value = '', $extra = '')
+	{
+		$defaults = array(
+			'type' => 'text',
+			'name' => is_array($data) ? '' : $data,
+			'value' => $value,
+			'required' => 'required'
+		);
+
+		return '<input '._parse_form_attributes($data, $defaults)._attributes_to_string($extra)." />\n";
+	}
+}
+// ------------------------------------------------------------------------
+
 if ( ! function_exists('form_input'))
 {
 	/**
@@ -204,6 +228,28 @@ if ( ! function_exists('form_input'))
 	{
 		$defaults = array(
 			'type' => 'text',
+			'name' => is_array($data) ? '' : $data,
+			'value' => $value
+		);
+
+		return '<input '._parse_form_attributes($data, $defaults)._attributes_to_string($extra)." />\n";
+	}
+}
+// ------------------------------------------------------------------------
+if ( ! function_exists('form_number'))
+{
+	/**
+	 * Text Input Field
+	 *
+	 * @param	mixed
+	 * @param	string
+	 * @param	mixed
+	 * @return	string
+	 */
+	function form_number($data = '', $value = '', $extra = '')
+	{
+		$defaults = array(
+			'type' => 'tel',
 			'name' => is_array($data) ? '' : $data,
 			'value' => $value
 		);
@@ -275,7 +321,8 @@ if ( ! function_exists('form_textarea'))
 		$defaults = array(
 			'name' => is_array($data) ? '' : $data,
 			'cols' => '40',
-			'rows' => '10'
+			'rows' => '10',
+			'required' => 'required'
 		);
 
 		if ( ! is_array($data) OR ! isset($data['value']))
