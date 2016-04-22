@@ -29,7 +29,7 @@ public function project_bewerken(){
 public function admin(){
     $this->load->view('templates/header');
     $this->load->view('templates/sidebar_admin');
-    $this->load->view('pages/projectpagina');
+    $this->load->view('pages/adminpagina');
     }
 public function teLaatOverzicht(){
     $this->load->view('templates/header');

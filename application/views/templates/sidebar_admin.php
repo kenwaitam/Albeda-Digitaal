@@ -1,5 +1,4 @@
 <!-- Top Navigation -->
-<img class="closeButton" src="<?php echo base_url("img/closebtn_white.png")?>" width="30px" height="30px">
 <img class="menuButton" src="<?php echo base_url("img/openmenu.png")?>" width="30px" height="30px">
 <div id="wrapper">
     <div id="sidebar-wrapper">

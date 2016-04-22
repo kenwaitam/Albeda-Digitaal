@@ -26,6 +26,7 @@
 				$logout_path = site_url('login/logout');
 				echo '<li id="contact"><a href="'.$logout_path.'">Logout</a></li>';
 			}?>
+            <li id="projectpagina"><a href="<?php echo base_url();?>">Project overzicht</a></li>
         </ul>
     </div>
 </div>
