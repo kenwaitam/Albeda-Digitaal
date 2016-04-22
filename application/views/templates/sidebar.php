@@ -14,6 +14,9 @@
             echo '<li id="documenten"><a href="#">Documenten</a></li>';
 			}?>
             <li id="contact"><a href="#">Contact</a></li>
+            <?php if (isset($_SESSION['username'])){
+                echo '<li id="admin"><a href="'.base_url().'pages/admin">Admin paneel</a></li>';
+            }?>
             <li><a href="#">Printen</a></li>
 			<?php if (!isset($_SESSION['username'])){
 				$login_path = site_url('login/index');
@@ -23,6 +26,7 @@
 				$logout_path = site_url('login/logout');
 				echo '<li id="contact"><a href="'.$logout_path.'">Logout</a></li>';
 			}?>
+            <li id="projectpagina"><a href="<?php echo base_url();?>">Project overzicht</a></li>
         </ul>
     </div>
 </div>

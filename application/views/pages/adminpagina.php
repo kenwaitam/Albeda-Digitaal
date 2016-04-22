@@ -26,8 +26,8 @@
 </div>
 <script>
     $(document).ready(function(){
-       $('.project1').click(function(){
-           $(location).attr('href', 'pages/view');
-       });
+        $('.project1').click(function(){
+            $(location).attr('href', 'view');
+        });
     });
 </script>
