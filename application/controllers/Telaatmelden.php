@@ -30,7 +30,7 @@ class Telaatmelden extends CI_Controller {
         $this->form_validation->set_rules('mentor', 'Mentor', 'required');
         $this->form_validation->set_rules('reason', 'Reason', 'required');
              if($this->form_validation->run())
-                //volgende stap: waardes ophalen
+                //volgende stap: waardes ophalen.
              else
                 $this->error_message = "Sommige waardes konden niet worden opgehaald.";
     }
