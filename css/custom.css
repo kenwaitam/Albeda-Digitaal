@@ -45,6 +45,7 @@
     margin-top:8px;
     margin-left:8px;
     cursor:pointer;
+
 }
 .menu{
     width:200px;
@@ -137,6 +138,9 @@ body{
 #sidebar-wrapper{
     width:0px;
 }
+#admin-sidebar{
+    width:0px;
+}
 .toggled{
     width:250px;
 }
@@ -151,4 +155,7 @@ body{
 #plus_img{
     margin-top:225px;
     cursor:pointer;
+}
+#telaat{
+    margin-top:60px;
 }
