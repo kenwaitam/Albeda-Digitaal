@@ -1,6 +1,11 @@
 <div class="container-fluid container-telaatFormulier">
        <h2 class="col-sm-offset-1">Te laat Formulier</h2>
        <?php echo form_open('', 'class="form-horizontal telaat-formulier"'); ?>
+            <?php if(!empty($this->error_message)){
+                echo '<div class="col-sm-offset-1 col-sm-12">
+                            <p class="error-message-custom">'.$this->error_message.'</p>
+                      </div>';
+            }?>
                 <div class="form-group">
                     <label class="control-label col-sm-offset-1 col-sm-1" for="usr">Voornaam:</label>
                     <div class="col-sm-3">

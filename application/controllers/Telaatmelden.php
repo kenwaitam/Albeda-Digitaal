@@ -9,6 +9,7 @@ class Telaatmelden extends CI_Controller {
     public $sudentnumber;
     public $mentor;
     public $reason;
+    public $error_message;
 
     public function __construct()
     {
@@ -29,9 +30,9 @@ class Telaatmelden extends CI_Controller {
         $this->form_validation->set_rules('mentor', 'Mentor', 'required');
         $this->form_validation->set_rules('reason', 'Reason', 'required');
              if($this->form_validation->run())
-                echo "t";
+                //volgende stap: waardes ophalen
              else
-                echo "b";
+                $this->error_message = "Sommige waardes konden niet worden opgehaald.";
     }
     private function setPostValues(){
             $this->firstname = $this->input->post('firstname');
