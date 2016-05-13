@@ -59,9 +59,9 @@ class Form extends CI_Controller {
         $this->form_validation->set_rules('reason', 'Username', 'required');
 
         if(!$this->print){
-            $this->load->view('project_telaat/formulier_telaat');
+            $this->load->view('pages/form');
         }else{
-            $this->load->view('project_telaat/print_formulier');
+            $this->load->view('pages/print_form');
         }
     }
 }
