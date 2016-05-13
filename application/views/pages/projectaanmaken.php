@@ -4,10 +4,13 @@ function addRow()
 {
     var row2 = "<br><input type='text' name='deelnemer2' class='form-control' id='deelnemer2' placeholder='Naam deelnemer'>";
     $(".deelnemer1").append(row2);
-
 }
-
 </script>
+
+
+<?php echo validation_errors(); ?>
+
+<?php echo form_open('pages/projectaanmaken'); ?>
 
 <div class="container">
     <h3>Project aanmaken</h3>

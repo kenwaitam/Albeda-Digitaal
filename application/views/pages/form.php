@@ -22,7 +22,7 @@
             <div class="form-group">
                 <label class="control-label col-sm-offset-1 col-sm-1" for="usr">Leerlingnummer:</label>
                 <div class="col-sm-3">
-                    <?php echo form_input_req('studentnumber',''.$this->sudentnumber.'','class="form-control col-sm-offset-1 input-sm"'); ?>
+                    <?php echo form_input_req('studentnumber',''.$this->studentnumber.'','class="form-control col-sm-offset-1 input-sm"'); ?>
                 </div>
             </div>
 
