@@ -17,14 +17,11 @@ class Login extends CI_Controller {
 		
 		$this->form_validation->set_rules('username', 'Username', 'required');
 		$this->form_validation->set_rules('password', 'Password', 'required');
-
 		
 		if (isset($_SESSION['username'])) {
 			$this->loginstate->logged_in($page = 'home');
 		}
 		
-
-
 		if(isset($_POST["submit"])) {
 			if ($this->form_validation->run()) {
 				if ($this->login_model->login_query() == 1) {
@@ -58,13 +55,6 @@ class Login extends CI_Controller {
 		//$this->load->view('templates/headerlogin', $data);
 		$this->load->view('templates/header');
 		$this->load->view('login/index');
-	}
-	
-	public function logout(){
-		session_start();
-		unset($_SESSION);
-		session_destroy();
-		redirect('/pages/view/');
 	}
 	
 }
