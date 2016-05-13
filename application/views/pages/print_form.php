@@ -1,7 +1,12 @@
+<style>
+    body{
+        overflow:hidden;
+    }
+</style>
 <script src="<?php echo base_url("js/jquery.PrintArea.js")?>" type="text/JavaScript" language="javascript"></script>
 <div class="container-fluid">
     <div class="col-sm-1"></div>
-    <div id="telaatbrief" class="col-sm-11 telaat-brief">
+    <div id="telaatbrief" class="col-sm-11 telaat-brief"">
             <div class="col-sm-12 row">
                 <div class="col-sm-12">
                     <h2 class="">Te laat Brief</h2>
@@ -48,4 +53,8 @@
     $( "#telaatbrief" ).printArea( options );
 //    window.location.replace("http://stackoverflow.com");
 </script>
-
+<script>
+    $(document).ready(function(){
+     $('#telaatbrief').hide();
+    });
+</script>

@@ -14,7 +14,7 @@
             echo '<li id="documenten"><a href="#">Documenten</a></li>';
 			}?>
             <li id="contact"><a href="#">Contact</a></li>
-            <li><a href="#">Printen</a></li>
+            <li><a href="<?php echo base_url(); ?>form">Printen</a></li>
 			<?php if (!isset($_SESSION['username'])){
 				$login_path = site_url('login/index');
 				echo '<li id="contact"><a href="'.$login_path.'">Login</a></li>';
