@@ -53,4 +53,4 @@
             </div>
     <?php echo form_close(); ?>
 </div>
-<script src="js/custom.js"></script>
+<script src="<?php echo base_url("js/custom.js")?>"></script>
