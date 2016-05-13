@@ -1,3 +1,37 @@
+.telaat-brief{
+    display: block;
+    margin: 20px 0 0 0;
+    border: 1px solid black;
+    max-width: 600px;
+    padding: 10px;
+}
+
+.container-telaatFormulier{
+    background-color: #C3C5C4;
+    height: 100%;
+    padding-bottom: 15px;
+}
+.container-telaatFormulier h2{
+    font-size: 2.5em;
+}
+.telaat-formulier{
+    margin-top: 20px;
+    display: block;
+}
+.telaat-formulier label{
+    text-align: left !important;
+}
+.error-message-custom{
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: red;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+
 .container-login{
     padding: 15px;
     margin-top: 15px;
@@ -45,6 +79,7 @@
     margin-top:8px;
     margin-left:8px;
     cursor:pointer;
+
 }
 .menu{
     width:200px;
@@ -137,6 +172,9 @@ body{
 #sidebar-wrapper{
     width:0px;
 }
+#admin-sidebar{
+    width:0px;
+}
 .toggled{
     width:250px;
 }
@@ -151,4 +189,7 @@ body{
 #plus_img{
     margin-top:225px;
     cursor:pointer;
+}
+#telaat{
+    margin-top:60px;
 }
