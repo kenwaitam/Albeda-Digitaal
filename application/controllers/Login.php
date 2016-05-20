@@ -67,12 +67,22 @@ class Login extends CI_Controller {
 				if (isset($_SESSION['username'])) {
 					$this->loginstate->logged_in($page = 'home');
 				}
-				header('location: '.base_url().'pages/view');
+				header('location: '.base_url().'');
 
 			}else{
 				echo "Wrong Studentnumber";
 			}
 		}
+	}
+
+	public function student_data(){
+		if(isset($_SESSION)){
+			$this->load->view('templates/header');
+			$this->load->view('login/student_data');
+		}else{
+			show_404();
+		}
+
 	}
 	
 }

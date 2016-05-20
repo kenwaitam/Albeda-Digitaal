@@ -15,9 +15,12 @@
 
 		public function login_NFC(){
 			$studentcode = $this->input->post('nfc_id');
-			$query = $this->db->get_where('users', array('leerlingnummer' => $studentcode));
+			$query = $this->db->get_where('students', array('studentnumber' => $studentcode));
 			return $query->num_rows();
 
+		}
+		public function student_data(){
+			$studentcode
 		}
 			/*$query = $this->db->get_where('login', array('loginName' => $username, 'loginPassword' => $password));
 			return $query->num_rows();*/
