@@ -7,4 +7,9 @@
  */
 class Project_Model extends CI_Model{
 
+    public function addProject(){
+        mysqli_query( );
+    }
+
+
 }

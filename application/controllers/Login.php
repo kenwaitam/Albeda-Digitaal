@@ -3,7 +3,7 @@ class Login extends CI_Controller {
 	
 		public function __construct() {
 			parent::__construct();
-			$this->load->model('login_model');
+			$this->load->model('Login_Model');
 			$this->load->library('loginstate');
 		}
 	
@@ -18,9 +18,9 @@ class Login extends CI_Controller {
 		$this->form_validation->set_rules('username', 'Username', 'required');
 		$this->form_validation->set_rules('password', 'Password', 'required');
 		
-		if (isset($_SESSION['username'])) {
-			$this->loginstate->logged_in($page = 'home');
-		}
+//		if (isset($_SESSION['username'])) {
+////			$this->loginstate->logged_in($page = 'home');
+//		}
 		
 		if(isset($_POST["submit"])) {
 			if ($this->form_validation->run()) {
@@ -55,6 +55,24 @@ class Login extends CI_Controller {
 		//$this->load->view('templates/headerlogin', $data);
 		$this->load->view('templates/header');
 		$this->load->view('login/index');
+	}
+
+	public function login_NFC(){
+		$this->load->view('templates/header');
+		$this->load->view('login/login_NFC');
+
+		if(isset($_POST['submit'])){
+			if ($this->Login_Model->login_NFC() == 1) {
+				$_SESSION['username'] =	'test';
+				if (isset($_SESSION['username'])) {
+					$this->loginstate->logged_in($page = 'home');
+				}
+				header('location: '.base_url().'pages/view');
+
+			}else{
+				echo "Wrong Studentnumber";
+			}
+		}
 	}
 	
 }
